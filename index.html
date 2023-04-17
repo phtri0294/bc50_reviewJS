@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>REVIEW JAVASCRIPT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-5 py-5">
+        <!-- ==================================== -->
+        <!-- Bài tập 1: Tính tiền lương nhân viên -->
+        <div class="d-flex justify-content-center">
+            <div class="card w-50">
+                <div class="card-header">
+                    <h3>Bài tập 1: Chương trình tính tiền lương nhân viên</h3>
+                </div>
+
+                <div class="card-body">
+                    <!-- INPUT 1: Lương 1 ngày -->
+                    <div class="form-group text-center">
+                        <h4>Lương 1 ngày (VND)</h4>
+                        <input id="luong1Ngay" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+
+                    <!-- INPUT 2: Số ngày làm -->
+                    <div class="form-group text-center">
+                        <h4>Số ngày làm (ngày)</h4>
+                        <input id="soNgayLam" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+                </div>
+
+                <div class="card-footer text-center">
+                    <button id="btnTinhTienLuong" class="btn btn-success" style="font-size: 25px;">TÍNH TIỀN
+                        LƯƠNG</button>
+
+                    <!-- HIỂN THỊ KẾT QUẢ -->
+                    <div class="mt-3">
+                        <p id="tienLuong" class="alert alert-primary font-weight-bold" style="font-size: 30px;">10000
+                            VND
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================================== -->
+        <br />
+        <hr />
+
+        <!-- ==================================== -->
+        <!-- Bài tập 2: Tính giá trị trung bình -->
+        <div class="d-flex justify-content-center">
+            <div class="card w-50">
+                <div class="card-header bg-dark text-white">
+                    <h3>Bài tập 2: Chương trình tính giá trị trung bình của 5 số thực</h3>
+                </div>
+
+                <div class="card-body">
+                    <!-- INPUT 1: Giá trị 1 -->
+                    <div class="form-group text-center">
+                        <h4>Giá trị 1</h4>
+                        <input id="giaTri1" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+
+                    <!-- INPUT 1: Giá trị 2 -->
+                    <div class="form-group text-center">
+                        <h4>Giá trị 2</h4>
+                        <input id="giaTri2" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+
+                    <!-- INPUT 1: Giá trị 3 -->
+                    <div class="form-group text-center">
+                        <h4>Giá trị 3</h4>
+                        <input id="giaTri3" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+
+                    <!-- INPUT 1: Giá trị 4 -->
+                    <div class="form-group text-center">
+                        <h4>Giá trị 4</h4>
+                        <input id="giaTri4" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+
+                    <!-- INPUT 1: Giá trị 5 -->
+                    <div class="form-group text-center">
+                        <h4>Giá trị 5</h4>
+                        <input id="giaTri5" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+
+                </div>
+
+                <div class="card-footer text-center">
+                    <button id="btnTinhTrungBinh" class="btn btn-success" style="font-size: 25px;">TÍNH TRUNG
+                        BÌNH</button>
+
+                    <!-- HIỂN THỊ KẾT QUẢ -->
+                    <div class="mt-3">
+                        <p id="trungBinh" class="alert alert-primary font-weight-bold" style="font-size: 30px;">0.5
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================================== -->
+        <br />
+        <hr />
+
+        <!-- ==================================== -->
+        <!-- Bài tập 3: Quy đổi tiền -->
+        <div class="d-flex justify-content-center">
+            <div class="card w-50">
+                <div class="card-header bg-warning">
+                    <h3>Bài tập 3: Quy đổi tiền USD thành VND</h3>
+                </div>
+
+                <div class="card-body">
+                    <!-- INPUT 1: soLuongUSD -->
+                    <div class="form-group text-center">
+                        <h4>Số lượng (USD)</h4>
+                        <input id="soLuongUSD" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+
+                </div>
+
+                <div class="card-footer text-center">
+                    <button id="btnQuyDoi" class="btn btn-success" style="font-size: 25px;">QUY ĐỔI TIỀN</button>
+
+                    <!-- HIỂN THỊ KẾT QUẢ -->
+                    <div class="mt-3">
+                        <p id="quyDoi" class="alert alert-primary font-weight-bold" style="font-size: 30px;">10000 VND
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================================== -->
+        <br />
+        <hr />
+
+        <!-- ==================================== -->
+        <!-- Bài tập 4: Tính diện tích, chu vi hình chữ nhật -->
+        <div class="d-flex justify-content-center">
+            <div class="card w-50">
+                <div class="card-header bg-danger text-white">
+                    <h3>Bài tập 4: Chương trình tính diện tích, chu vi hình chữ nhật</h3>
+                </div>
+
+                <div class="card-body">
+                    <!-- INPUT 1: chieuDai -->
+                    <div class="form-group text-center">
+                        <h4>Chiều dài (m)</h4>
+                        <input id="chieuDai" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+
+                    <!-- INPUT 2: chieuRong -->
+                    <div class="form-group text-center">
+                        <h4>Chiều rộng (m)</h4>
+                        <input id="chieuRong" class="form-control" type="number" placeholder="12345..." />
+                    </div>
+
+                </div>
+
+                <div class="card-footer text-center">
+                    <button id="btnTinhToan" class="btn btn-success" style="font-size: 25px;">TÍNH TOÁN</button>
+
+                    <!-- HIỂN THỊ KẾT QUẢ -->
+                    <div class="mt-3">
+                        <p id="dienTich" class="alert alert-primary font-weight-bold" style="font-size: 30px;">Diện tích
+                        </p>
+                    </div>
+
+                    <div class="mt-3">
+                        <p id="chuVi" class="alert alert-warning font-weight-bold" style="font-size: 30px;">Chu vi
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================================== -->
+        <br />
+        <hr />
+
+        <!-- ==================================== -->
+        <!-- Bài tập 5: Tính tổng 2 ký số -->
+        <div class="d-flex justify-content-center">
+            <div class="card w-50">
+                <div class="card-header bg-info text-white">
+                    <h3>Bài tập 5: Chương trình tính tổng 2 ký số của số có 2 chữ số</h3>
+                </div>
+
+                <div class="card-body">
+                    <!-- INPUT 1: soNguyenDuong -->
+                    <div class="form-group text-center">
+                        <h4>Số nguyên dương 2 chữ số</h4>
+                        <input id="soNguyenDuong" class="form-control" type="number" placeholder="99" />
+                    </div>
+
+                </div>
+
+                <div class="card-footer text-center">
+                    <button id="btnTinhTong" class="btn btn-success" style="font-size: 25px;">TÍNH TỔNG</button>
+
+                    <!-- HIỂN THỊ KẾT QUẢ -->
+                    <div class="mt-3">
+                        <p id="tinhTong2KySo" class="alert alert-primary font-weight-bold" style="font-size: 30px;">Tổng 2 ký số
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
